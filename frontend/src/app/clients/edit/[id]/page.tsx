@@ -1,9 +1,9 @@
 'use client'
 
 import { useState, useEffect } from "react";
-import EditClientForm from "../../../components/clienteForm/clientForm";
+import EditClientForm from "../../../components/clientForm/clientForm";
 import { useParams } from 'next/navigation';
-import { findClientById, updateClient } from "@/app/services/api/clienteService";
+import { findClientById, updateClient } from "@/app/services/api/clientService";
 import { Client } from "@/app/types/clients";
 import { IFormInput } from "@/app/types/formInput";
 import { useRouter } from 'next/navigation';
@@ -17,7 +17,6 @@ export default function EditClient() {
 
   const params = useParams<{ id: string }>();
   const [client, setClient] = useState<Client | undefined>(undefined);
-  const [loading, setLoading] = useState(true);
   const router = useRouter();
 
 
@@ -29,8 +28,6 @@ export default function EditClient() {
         setClient(data);
       } catch (error) {
         console.error('Erro ao carregar clientes:', error);
-      } finally {
-        setLoading(false);
       }
     }
 

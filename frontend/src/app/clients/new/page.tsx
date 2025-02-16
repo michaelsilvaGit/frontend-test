@@ -1,8 +1,8 @@
 'use client'
 
-import EditClientForm from "../../components/clienteForm/clientForm";
+import EditClientForm from "../../components/clientForm/clientForm";
 import { useRouter } from 'next/navigation';
-import { newClient } from "@/app/services/api/clienteService";
+import { newClient } from "@/app/services/api/clientService";
 import { IFormInput } from "@/app/types/formInput";
 import { Client } from "@/app/types/clients";
 

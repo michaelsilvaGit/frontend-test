@@ -25,7 +25,7 @@ const ModalDelete: React.FC<ModalDeleteProps> = ({ isModalOpen, onCancel, handle
                             handleDelete();
                             hideModal();
                         }}
-                        className="w-full py-3 bg-gray-300 text-gray-700 font-semibold rounded-lg hover:bg-gray-400 transition duration-200"
+                        className="w-full py-3 bg-gray-200 text-gray-800 font-semibold rounded-lg hover:bg-gray-300 transition duration-200"
                     >
                         Confirmar
                     </button>
@@ -35,13 +35,13 @@ const ModalDelete: React.FC<ModalDeleteProps> = ({ isModalOpen, onCancel, handle
                             hideModal();
                         }}
                         className="w-full py-3 bg-red-500 text-white font-semibold rounded-lg hover:bg-red-600 transition duration-200"
-
                     >
                         Cancelar
                     </button>
                 </div>
             </div>
         </div>
+
     ), [handleDelete, onCancel]);
 
 

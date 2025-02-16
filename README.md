@@ -24,7 +24,7 @@ Este projeto é um teste de frontend desenvolvido utilizando **React** e **Next.
 - **Criar Cliente:** No header clique no botão "Novo Cliente" ou no aviso na tela para abrir o formulário de criação de um novo cliente. Preencha os campos obrigatórios e salve.
 - **Visualizar Cliente:** Na tabela ao passar o mouse em cima da lista dos clientes, selecione e será redirecionado a pagina de visualização.
 - **Editar Cliente:** Clique no ícone de edição de um cliente na tabela para modificar os dados. Na tela de edição salve as alterações após editar.
-- **Deletar Cliente:** Clique no ícone de exclusão nada tabela ao lado de um cliente para removê-lo da lista confirme a ação no modal que irá aparecer.
+- **Deletar Cliente:** Na tabela clique no ícone de exclusão para remover um cliente da lista, confirme a ação no modal.
 
 ## Instalação
 

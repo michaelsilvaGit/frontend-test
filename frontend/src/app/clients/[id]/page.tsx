@@ -2,7 +2,7 @@
 
 import Image, { StaticImageData } from 'next/image';
 import { useState, useEffect } from 'react';
-import { findClientById } from '@/app/services/api/clienteService';
+import { findClientById } from '@/app/services/api/clientService';
 import { useParams } from 'next/navigation';
 import { formatDate } from '@/app/utils/formatDate';
 import ImageDefault from '../../assets/images/withoutAvatar.webp'
