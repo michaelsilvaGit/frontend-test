@@ -6,8 +6,8 @@ import Image, { StaticImageData } from 'next/image';
 import { useState, useEffect } from 'react';
 import ImageDefault from '../../assets/images/withoutAvatar.webp'
 import { IFormInput, EditClientFormProps } from '@/app/types/formInput';
-
-
+import { validateImageUrl } from '@/app/utils/validateImageUrl';
+import { isValidUrl } from '@/app/utils/isValidUrl';
 
 
 
@@ -49,20 +49,6 @@ export default function EditClientForm({ client, onSubmit }: EditClientFormProps
         }
         const formData: IFormInput = getValues();
         onSubmit(formData);
-    }
-
-    function validateImageUrl(value: string): true | string {
-        const regex = /\.(jpeg|jpg|gif|png|webp|bmp|svg)$/i;
-        return regex.test(value) ? true : 'URL deve ser de uma imagem válida';
-    };
-
-    function isValidUrl(url: string): boolean {
-        try {
-            new URL(url);
-            return true;
-        } catch (error) {
-            return false;
-        }
     }
 
     function handleImageError(): void {
