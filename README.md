@@ -1,3 +1,5 @@
+# Projeto Teste Sinka: Lista de Clientes
+
 Este projeto é um teste de frontend desenvolvido utilizando **React** e **Next.js**. Ele tem como objetivo gerenciar uma lista de clientes, permitindo a visualização, criação, edição e exclusão de registros de clientes em uma tabela interativa.
 
 ## Funcionalidades
