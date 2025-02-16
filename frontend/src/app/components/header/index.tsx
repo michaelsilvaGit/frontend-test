@@ -5,6 +5,7 @@ import Link from "next/link";
 export function Header() {
 
   return (
+    
     <header className="bg-gray-900 text-white shadow-lg sticky top-0 z-50">
       <div className="flex items-center justify-between px-6 py-4 w-full max-w-7xl mx-auto">
         <div className="text-2xl font-semibold tracking-wide">

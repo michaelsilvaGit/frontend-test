@@ -69,30 +69,29 @@ export default function Clients() {
 
 
     return (
-        <>
-            <div className="max-w-xs sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl mx-auto flex flex-col items-center justify-center mt-7">
+        
+        <div className="max-w-xs sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl mx-auto flex flex-col items-center justify-center mt-7">
 
-                <ModalDelete
-                    isModalOpen={isModalOpen}
-                    onCancel={handleCancel}
-                    handleDelete={() => clientIdToDelete && handleDelete(clientIdToDelete)}
-                />
+            <ModalDelete
+                isModalOpen={isModalOpen}
+                onCancel={handleCancel}
+                handleDelete={() => clientIdToDelete && handleDelete(clientIdToDelete)}
+            />
 
-                <div className="w-full mt-16">
-                    <h1 className="text-4xl text-center mx-auto">Clientes</h1>
-                    <div className="w-full overflow-x-auto mt-7">
-                        <div className="w-full">
-                            {clients.length > 0 ? (
-                                <TableClients handleDeleteClick={handleDeleteClick} handleEdit={handleEdit} handleRowClick={handleRowClick} clients={clients} />
-                            ) : (
-                                <p className='text-center mt-24'>Nenhum cliente cadastrado! <Link className="underline" href='/clients/new'>Cadastrar aqui.</Link></p>
-                            )}
+            <div className="w-full mt-16">
+                <h1 className="text-4xl text-center mx-auto">Clientes</h1>
+                <div className="w-full overflow-x-auto mt-7">
+                    <div className="w-full">
+                        {clients.length > 0 ? (
+                            <TableClients handleDeleteClick={handleDeleteClick} handleEdit={handleEdit} handleRowClick={handleRowClick} clients={clients} />
+                        ) : (
+                            <p className='text-center mt-24'>Nenhum cliente cadastrado! <Link className="underline" href='/clients/new'>Cadastrar aqui.</Link></p>
+                        )}
 
-                        </div>
                     </div>
                 </div>
-
             </div>
-        </>
+        </div>
+
     );
 }

@@ -12,6 +12,7 @@ export default function TableClients({ clients, handleRowClick, handleEdit, hand
 
 
     return (
+        
         <table className="min-w-full table-auto bg-white border border-gray-200">
             <thead className='bg-slate-600'>
                 <tr >

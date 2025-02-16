@@ -7,7 +7,7 @@ import { useParams } from 'next/navigation';
 import { formatDate } from '@/app/utils/formatDate';
 import ImageDefault from '../../assets/images/withoutAvatar.webp'
 import { Client } from '@/app/types/clients';
-
+import { isValidUrl } from '@/app/utils/isValidUrl';
 
 
 
@@ -34,15 +34,6 @@ export default function DetailClient() {
         fetchClientes();
 
     }, []);
-
-    function isValidUrl(url: string): boolean {
-        try {
-            new URL(url);
-            return true;
-        } catch (error) {
-            return false;
-        }
-    }
 
     function handleImageError(): void {
         setImageValidate(ImageDefault);
