@@ -1,50 +1,52 @@
-# Teste Frontend Sinka
-
-## Objetivo
-
-Desenvolver uma aplicação frontend utilizando **React e Next.js** para consumir dados de uma API backend que disponibilizaremos. O objetivo é criar uma interface interativa e responsiva para gerenciar clientes, permitindo a listagem, visualização, edição e exclusão de registros.
-
-## Requisitos Técnicos
-
-A aplicação deve ser desenvolvida utilizando as seguintes tecnologias:
-
-- React **(com uso de hooks e componentes funcionais)**
-- Next.js
-- Tailwind CSS
-- Git
+Este projeto é um teste de frontend desenvolvido utilizando **React** e **Next.js**. Ele tem como objetivo gerenciar uma lista de clientes, permitindo a visualização, criação, edição e exclusão de registros de clientes em uma tabela interativa.
 
 ## Funcionalidades
 
-1. **Listagem de Clientes**
+- **Listar Clientes**: Exibe uma tabela com informações relevante de clientes.
+- **Visuallizar Cliente**: Em uma página exibe todos os dados do cliente incluido seu avatar.
+- **Criar Cliente**: Permite a criação de um novo cliente.
+- **Editar Cliente**: Oferece a possibilidade de editar os dados de um cliente existente.
+- **Deletar Cliente**: Exclui um cliente da lista.
 
-   - Exibir todos os clientes em uma tabela.
-   - Apresentar informações relevantes, como: nome de usuário, e-mail, status (ativo / inativo) e data de criação.
-   - A tabela deve ser estilizada (de forma livre) e responsiva.
+## Tecnologias Utilizadas
 
-2. **Visualização de Cliente**
+- **React**: Biblioteca para construção de interfaces de usuário.
+- **Next.js**: Framework React para desenvolvimento de aplicações web com renderização do lado servidor (SSR) e rotas dinâmicas.
+- **Tailwind CSS**: Estilizando as páginas usando tailwind.
+- **Fetch API**: Ultilizado para fazer as requisição HTTP com o backend.
+- **React Hook Form**: Para gerenciamento e validação de formulários.
 
-   - Criar uma página dedicada para exibir detalhes de um cliente específico.
+## Como Usar
 
-3. **Edição de Cliente**
+- **Listar Clientes:** Na página inicial, você verá uma tabela com todos os clientes cadastrados.
+- **Criar Cliente:** No header clique no botão "Novo Cliente" ou no aviso na tela para abrir o formulário de criação de um novo cliente. Preencha os campos obrigatórios e salve.
+- **Visualizar Cliente:** Na tabela ao passar o mouse em cima da lista dos clientes, selecione e será redirecionado a pagina de visualização.
+- **Editar Cliente:** Clique no ícone de edição de um cliente na tabela para modificar os dados. Na tela de edição salve as alterações após editar.
+- **Deletar Cliente:** Clique no ícone de exclusão nada tabela ao lado de um cliente para removê-lo da lista confirme a ação no modal que irá aparecer.
 
-   - Permitir a edição das informações de um cliente.
-   - Opção para alterar a senha do cliente.
-   - Validar os dados antes do envio.
-   - Será um diferencial usar **react-hook-form**.
+## Instalação
 
-4. **Exclusão de Cliente**
+Siga os passos abaixo para rodar o projeto localmente:
 
-   - Implementar a funcionalidade para remover um cliente.
-   - Exibir uma mensagem de confirmação antes da exclusão. Usar um modal ou popup estilizado.
+1. **Clone o repositório:**
+   
+   - git clone https://github.com/michaelsilvaGit/frontend-test.git
 
-**Dica:**
-A estilização visual fica à sua escolha, mas damos preferência a algo não muito simples, use os recursos do Tailwind para deixar as telas com aparência moderna e fluida.
+2. **Acesse a pasta do projeto:**
 
-## Entrega
+   - cd frontend-test
 
-Subir o código em um repositório público do GitHub com as instruções para execução do projeto e nos enviar o link.
+4. **Acesse a pasta frontend e Instale as dependências:**
+    
+   - cd frontend
+   - npm install
 
-## Como rodar o backend
+5. **Iniciar aplicação:**
+   
+   - npm run dev
+   - Abra o navegador e acesse http://localhost:3000 ou a url vista no terminal.
+
+## Iniciar o Backend
 
 1. Ir até a pasta `backend`
 2. Instalar os módulos com `npm install`
